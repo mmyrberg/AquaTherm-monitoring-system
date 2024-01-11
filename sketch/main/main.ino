@@ -91,6 +91,7 @@ static void prepareTxFrame(uint8_t port) {
   }
 }
 
+/* Dispalys temperature on OLED */
 void displayTemperature(float temperature) {
   displayMcu.clear();
   displayMcu.setTextAlignment(TEXT_ALIGN_CENTER);
@@ -109,7 +110,7 @@ void setup() {
   Mcu.begin();
   sensors.begin();
   displayMcu.init();
-  displayMcu.flipScreenVertically();
+  //displayMcu.flipScreenVertically(); // Add this depending on OLED alignment
 
   deviceState = DEVICE_STATE_INIT;
 }
@@ -138,7 +139,7 @@ void loop() {
     }
     case DEVICE_STATE_CYCLE:
     {
-      /*Display temperature reading on OLED for 1 minute*/
+      /*Display temperature reading on OLED for 10 minutes before sleep mode*/
       displayTemperature(temperature);
       delay(600000);
       /*Schedule next packet transmission*/
