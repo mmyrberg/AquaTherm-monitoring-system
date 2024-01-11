@@ -1,6 +1,6 @@
 # Sammanfattning - En IoT-lösning för Vattentemperaturmätning
 
-> [För fullständig rapport, klicka här](https://github.com/mmyrberg/AquaTherm-monitoring-system/Examensarbete-Rapport-MartinMyrberg.pdf)
+> [För fullständig rapport, klicka här](./Examensarbete-Rapport-MartinMyrberg.pdf)
 
 ## Om projektet
 Projektet syftar till att utveckla en IoT-lösning för att förbättra tillgängligheten och noggrannheten av information om badvattentemperaturer på en ö i Stockholm skärgård.
